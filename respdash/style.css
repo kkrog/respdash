@@ -1,0 +1,127 @@
+/*reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+   
+  ul {
+    list-style: none;
+  }
+   
+  a,
+  button {
+    color: inherit;
+  }
+   
+  a {
+    text-decoration: none;
+  }
+   
+  button {
+    background: none;
+    cursor: pointer;
+  }
+   
+  input {
+    -webkit-appearance: none;
+  }
+   
+  button,
+  input {
+    border: none;
+  }
+   
+  svg {
+    display: block;
+  }
+   
+  body {
+    font: 16px "Cabin", sans-serif;
+  }
+/*styleout*/
+@font-face {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cabin'), local('Cabin-Regular'), url(https://fonts.gstatic.com/s/cabin/v14/u-4x0qWljRw-Pd8w__0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+main {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(5, 1fr);
+    grid-gap: 1rem;
+    height: 100vh; 
+}
+.sidebar {
+    grid-area: 1 / 1 / 11 / 2;
+    width: 220px;
+    height: 100vh;
+    background-color: rebeccapurple;
+}
+header {
+    grid-area: 1 / 2 / 2 / 6;
+}
+header h1 {
+    display: inline-block;
+    float: left;
+}
+header figure {
+    float: right;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+header i {
+    display: inline-block;
+    float: right;
+}
+
+header img{
+    max-width: 3rem;
+    border-radius: 100%;
+}
+.welcome {
+    grid-area: 2 / 2 / 4 / 6;
+    background-color: lightslategrey;
+}
+#welcomeleft {
+    float: left;
+}
+#welcomeright {
+    float: right;
+}
+#counters {
+    grid-area: 4 / 2 / 5 / 6;
+    display: flex;
+    justify-content: space-between;
+}
+.counters {
+    margin: 1rem 1rem;
+    background-color: greenyellow
+}
+.calendar {
+    grid-area: 5 / 2 / 10 / 4;
+    background-color: skyblue;
+}
+.projects {
+    grid-area: 5 / 4 / 10 / 6;
+    background-color:lightpink;
+}
+h1 {
+    color: #2d2f30;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.h2t {
+    color: rgba(45, 47, 48,.6);
+    font-size: 2rem;
+    font-weight: 500;
+}
+.h2o {
+    color: #2d2f30;
+    font-size: 2rem;
+    font-weight: 500;
+}
+/* i would rather NOT be here than be here gaining 0 extra info than I would at home. today is the worst. totally my fault, but the worst nonetheless. */
+/*IT IS SO HARD TO THINK HERE #spoiled #needmyquiet */
