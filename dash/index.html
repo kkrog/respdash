@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <title>A Responsive Dashboard</title>
+</head>
+<body>
+    <aside>
+        <h1><i class="material-icons">face</i>Ren</h1>
+        <ul class="sidenavmain">
+           <li><i class="material-icons">pie_chart</i>Overview</li>
+            <li><i class="material-icons">calendar_today</i>Calendar</li>
+            <li><i class="material-icons">assignment</i>Projects</li>
+            <li><i class="material-icons">person</i>Profile</li>
+        </ul>
+        <div id="toggle">
+            <!--add checkbox/hamburger option at end-->
+            <ul class="sidenavhide">       
+                <li><i class="material-icons">pie_chart</i>Overview</li>
+                <li><i class="material-icons">calendar_today</i>Calendar</li>
+                <li><i class="material-icons">assignment</i>Projects</li>
+                <li><i class="material-icons">person</i>Profile</li>
+            </ul>
+        </div>
+        <figure>
+            <img src="#" alt="some profile pic">
+            <figcaption>some words</figcaption>
+        </figure>
+    </aside>
+    <main>
+        <header>
+            <h2>Hello, you!</h2>
+            <p class="hideabout">This is a little dashboard to imaginarily track progress on development projects.</p>
+            <i class="material-icons">search</i>
+            <i class="material-icons">notifications</i>
+            <figure>
+                <img src="#" alt="some other profile pic">
+                <figcaption>Ren</figcaption>
+            </figure>
+        </header>
+        <div class="welctip">
+            <!--couldn't readily find a real tip widget, so this is a static imaginary placeholder-->
+            <div id="tipwidget">
+                <h2>Daily Coding Tip</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio explicabo facilis tempore, ipsum incidunt deleniti tenetur voluptas.</p>
+                <!--make this something passable and add a codepen link here's a sample embedded pen to play with-->
+                <div id="playpen">
+                    <p class="codepen" data-height="179" data-theme-id="dark" data-default-tab="css,result" data-user="kkrog" data-slug-hash="JjdjmpL" data-preview="true" style="height: 179px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="css/html only collapsible">
+                        <span>See the Pen <a href="https://codepen.io/kkrog/pen/JjdjmpL">
+                        css/html only collapsible</a> by kkrog (<a href="https://codepen.io/kkrog">@kkrog</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                  <!--end sample playpen-->
+                <div id="music">
+                    <iframe src="https://open.spotify.com/embed/playlist/2GI6wbTjS4M4QHN8PbsIr0" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            <div id="progress">
+                <figure>
+                    <!--so it looks like coding a piechart is a bit of a bitch sans JS, so we'll use a picture instead-->
+                    <img src="#" alt="cheating pic">
+                    <figcaption>some% progress</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="currproj">
+            <h2>Current Project</h2>
+            <i class="material-icons">circle</i>
+            <p>Blurb blurb blurb blurb</p>
+        </div>
+        <div class="otherproj">
+            <div id="archproj">
+                <h3>Archive</h3>
+                <ul class="old">
+                    <li><a href="https://github.com/kkrog/teatime">Teatime</a></li>
+                    <li><a href="https://github.com/kkrog/amalie_bakery">Bakery</a></li>
+                    <li><a href="https://github.com/kkrog/hippo">Hippo</a></li>
+                </ul>
+            </div>
+            <div id="futproj">
+                <h3>Future</h3>
+                <ul class="next">
+                    <li>New Project 1</li>
+                    <li>New Project 2</li>
+                    <li>New Project 3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cptasks">
+            <h2>Current Projects: <span>TASKS</span></h2>
+            <ul>
+                <li>Do a thing</li>
+                <li>Do another thing</li>
+                <li>Do a third thing</li>
+                <li>4th THING!</li>
+                <li>Alternate 5th thing?</li>
+            </ul>
+        </div>
+        <div class="calendar">
+            <h2>Deadlines</h2>
+            <div id="calwrap">
+                <iframe src="https://calendar.google.com/calendar/embed?src=j92sm693n57jlgah8qk5aboth8%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <div class="deadlines">
+            <h2>Deadlines: <span>Details</span></h2>
+            <ul>
+                <li>Some Deadline</li>
+                <li>Another Deadline!</li>
+                <li>Final Deadline</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

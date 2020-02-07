@@ -1,0 +1,82 @@
+/*reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #fff;
+    text-align: left;
+    font-size: 16px;
+    color: darkslategrey;
+    display: flex;
+}
+aside {
+    background-color: teal;
+    color: rgba(255,255,255,.6);
+    height: 100vh;
+}
+#toggle {
+    display: none;
+}
+main {
+    display: grid;
+    grid-template: 0fr 1fr 2fr 1fr 3fr / 0fr repeat(4,1fr);
+    grid-gap: 1rem;
+    width: 100vw;
+    height: 100vh;
+}
+header {
+    background-color: thistle;
+    grid-area: 2 / 2 / 3 / 6;
+}
+header h2 {
+    float: left;
+}
+header i {
+    float:right;
+}
+header figure {
+    position: fixed;
+    right: 1rem;
+}
+.welctip {
+    background-color: darkturquoise;
+    display: flex;
+    justify-content: space-between;
+    grid-area: 3 / 2 / 4 / 6;
+}
+#playpen {
+    display: none;
+}
+#progress {
+    background-color: turquoise;
+}
+.currproj {
+    background-color: violet;
+    grid-area: 4 / 2 / 5 / 4;
+}
+.otherproj {
+    grid-area: 4 / 4 / 5 / 6;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+}
+#archproj {
+    background-color: lightpink;
+}
+#futproj {
+    background-color: hotpink;
+}
+.cptasks {
+    background-color: lightskyblue;
+    grid-area: 5 / 2 / 6 / 3;
+}
+.calendar {
+    background-color: lightsteelblue;
+    grid-area: 5 / 3 / 6 / 5;
+}
+.deadlines {
+    background-color: mediumaquamarine;
+    grid-area: 5 / 5 / 6 / 6;
+}
