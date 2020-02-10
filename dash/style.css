@@ -161,8 +161,47 @@ header figure {
     height: 100%;
     margin-top: 2rem;*/
 }
-#progress {
+#welcright {
+    width: 33%;
+}
+#dailymood {
     background-color: turquoise;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+#slidewrap {
+    width: 100%;
+    margin: 0 auto;
+}
+.slider {
+    -webkit-appearance:none;
+    width: 90%;
+    height: 12px;
+    background: lightseagreen;
+    opacity: 0.6;
+    -webkit-transition: .1s;
+    transition: opacity .1s;
+}
+.slider:hover {
+    opacity: 1;
+}
+datalist {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid seagreen;
+    background-image: url('./img/smiley.jpg');
+    background-size: contain;
+    cursor: pointer;
 }
 .currproj {
     background-color: violet;
