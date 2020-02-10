@@ -204,12 +204,12 @@ datalist {
 }
 .currproj {
     background-color: violet;
-    grid-area: 3 / 1 / 4 / 3;
+    grid-area: project1;
 }
 .otherproj {
-    grid-area: 3 / 3 / 4 / 5;
-    display:flex;
-    flex-flow:row wrap;
+    grid-area: project2;
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 #archproj {
