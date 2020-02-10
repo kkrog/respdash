@@ -101,17 +101,39 @@ main {
 }
 header {
     background-color: thistle;
-    grid-area: 1 / 1 / 2 / 5;
+    grid-area: hello;
+    padding-top: .5vh;
+    display: flex;
+    justify-content: space-between;
 }
 header h2 {
-    float: left;
+    line-height: 2;
+    font-style: italic;
+}
+#hright {
+    display: flex;
 }
 header i {
-    float:right;
+    align-self: center;
+    margin-right: 1rem;
+}
+header i:hover {
+    color: rgba(47,79,79,.2);
 }
 header figure {
-    position: fixed;
-    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1.5rem;
+    border-left: .5px solid rgba(47,79,79,.6);
+    height: 100%;
+}
+#hright img {
+    border-radius: 50%;
+    padding: 2px;
+    border: .5px solid rgba(47,79,79,.6);
+    width: 7.5vh;
+    height: 7.5vh;
 }
 .welctip {
     background-color: darkturquoise;
