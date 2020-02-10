@@ -83,11 +83,21 @@ aside figure img {
 }
 /*end sidebar start main*/
 main {
+    grid-area: main;
     display: grid;
-    grid-template: 1fr 2fr 1fr 3fr / repeat(4,1fr);
+    grid-template: 2fr 3fr 2fr 4fr / repeat(4,1fr);
+    /*pretrial version: 1fr 2fr 1fr 3fr - change does nothing*/
     grid-gap: 1rem;
-    width: 100vw;
+    overflow: hidden;
+    /*at main update, overflow has no change*/
+    grid-template-areas:
+    "hello hello hello hello"
+    "welcome welcome welcome welcome"
+    "project1 project1 project2 project2"
+    "tasks calendar calendar dlines";
+    width: 100%;
     height: 100vh;
+    /*margin-right:1 rem; @main update does nothing*/
 }
 header {
     background-color: thistle;
