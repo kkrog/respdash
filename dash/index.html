@@ -10,12 +10,12 @@
 </head>
 <body>
     <aside>
-        <h1><i class="material-icons">face</i>Ren</h1>
+        <h1><i class="material-icons">face</i><span id="name">Ren</span></h1>
         <ul class="sidenavmain">
-           <li><i class="material-icons">pie_chart</i>Overview</li>
-            <li><i class="material-icons">calendar_today</i>Calendar</li>
-            <li><i class="material-icons">assignment</i>Projects</li>
-            <li><i class="material-icons">person</i>Profile</li>
+           <li><a href="#overview"><i class="material-icons">pie_chart</i><span>Overview</span></a></li>
+            <li><a href="#calendar"><i class="material-icons">calendar_today</i><span>Calendar</span></a></li>
+            <li><a href="#projects"><i class="material-icons">assignment</i><span>Projects</span></a></li>
+            <li><a href="#profile"><i class="material-icons">person</i><span>Profile</span></a></li>
         </ul>
         <div id="toggle">
             <!--add checkbox/hamburger option at end-->
@@ -27,8 +27,12 @@
             </ul>
         </div>
         <figure>
-            <img src="#" alt="some profile pic">
-            <figcaption>some words</figcaption>
+            <img src="./img/profile1.jpg" alt="some profile pic">
+            <figcaption id="fcmain">Ren Ford<br>ren.ford@tech901.org<br>901.555.1234</figcaption>
+            <figcaption id="fcalt">
+                <i class="material-icons">menu</i>
+                <p>Ren Ford<br>ren.ford@tech901.org<br>901.555.1234</p>
+            </figcaption>
         </figure>
     </aside>
     <main>
