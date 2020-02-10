@@ -85,7 +85,7 @@ aside figure img {
 main {
     grid-area: main;
     display: grid;
-    grid-template: 2fr 3fr 2fr 4fr / repeat(4,1fr);
+    grid-template: 1fr 2fr 3fr 4fr / repeat(4,1fr);
     /*pretrial version: 1fr 2fr 1fr 3fr - change does nothing*/
     grid-gap: 1rem;
     overflow: hidden;
@@ -93,7 +93,7 @@ main {
     grid-template-areas:
     "hello hello hello hello"
     "welcome welcome welcome welcome"
-    "project1 project1 project2 project2"
+    "project1 calendar calendar project2"
     "tasks calendar calendar dlines";
     width: 100%;
     height: 100vh;
@@ -222,16 +222,26 @@ datalist {
 }
 .cptasks {
     background-color: lightskyblue;
-    grid-area: 4 / 1 / 5 / 2;
+    grid-area: tasks;
 }
 .calendar {
     background-color: lightsteelblue;
-    grid-area: 4 / 2 / 5 / 4;
+    grid-area: calendar;
 }
-#calwrap {
-    margin: 0px auto;
+/*#calwrap {
+    position: relative;
+    padding-bottom: 52%;
+    height: 0;
+    overflow: hidden;
 }
+#calwrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
 .deadlines {
     background-color: mediumaquamarine;
-    grid-area: 4 / 4 / 5 / 5;
+    grid-area: dlines;
 }
