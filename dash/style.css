@@ -139,10 +139,13 @@ header figure {
     background-color: darkturquoise;
     display: flex;
     justify-content: space-between;
-    grid-area: 2 / 1 / 3 / 5;
+    grid-area: welcome;
 }
-#playpen {
-    display: none;
+#twitwrap {
+    position: relative;
+    height: 15vh;
+    max-width: 100%;
+    overflow: hidden;
 }
 #progress {
     background-color: turquoise;
