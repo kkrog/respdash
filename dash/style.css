@@ -191,6 +191,15 @@ header figure {
     background-color: violet;
     grid-area: project1;
 }
+.currproj h2,h4 {
+    padding-bottom: 1rem;
+}
+.currproj i {
+    font-size: 1rem;
+}
+.currproj p {
+    padding-left: 1rem;
+}
 .otherproj {
     grid-area: project2;
     display: flex;
