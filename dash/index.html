@@ -39,12 +39,15 @@
     <main>
         <header>
             <div id="hleft">
-                <h2>Hello, you!</h2>
-                <p class="hideabout">This is a little dashboard demo to track progress on development projects.</p>
+                <h2>Hello, you!<br id="headbreak"> Let's code.</h2>
+                <p class="hideabout">This is a little dashboard demo.</p>
             </div>
             <div id="hright">
-                <i class="material-icons">search</i>
-                <i class="material-icons">notifications</i>
+                <div class="search"><!--no know js yet for search plugin, so nonfunctioning-->
+                    <input class="stxt" type="text" name="" placeholder="Find it!">
+                    <a class="sbtn" href="#"><i class="material-icons">search</i></a>
+                </div>
+                <i class="material-icons"><a href="#">notifications</a></i>
                 <figure>
                     <img src="./img/profile2.jpg" alt="some other profile pic">
                     <figcaption>Ren</figcaption>
@@ -52,12 +55,14 @@
             </div>
         </header>
         <div class="welctip">
-                <h2>Thought of the Day</h2>
+            <div id="mood">
+                <h3>Mood for <script>document.write(new Date().toLocaleDateString());</script></h3>
+            </div>
+            <div id="inspo">
+                <h3>Thought of the Day</h3>
+            </div>
             <div id="music">
                 <h3>Tunes for Working</h3>
-            </div>
-            <div id="dailymood">
-                <h3>Daily Mood</h3>
             </div>
         </div>
         <div class="currproj">
