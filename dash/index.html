@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/e300bfb17d.js" crossorigin="anonymous"></script>
     <title>A Responsive Dashboard</title>
 </head>
-<!--THIS VERSION HAS NO IFRAMES OR PLUGIN CONTENT-->
+<!--THIS VERSION started with NO IFRAMES OR PLUGIN CONTENT-->
 <body>
     <aside role="navigation">
         <h1><i class="material-icons">face</i><span id="name">Ren</span></h1>
@@ -58,12 +58,20 @@
         <div class="welctip">
             <div id="mood">
                 <h3>Mood for <script>document.write(new Date().toLocaleDateString());</script></h3>
+                <div id="slidewrap">
+                    <input type="range" min="1" max="3" value="2" class="slider" id="slidey" list="marks">
+                    <datalist id="marks">
+                      <option value="1" label="+Coffee"></option>
+                      <option value="2" label="OK."></option>
+                      <option value="3" label="YAY!"></option>
+                    </datalist>
+                </div>
             </div>
             <div id="inspo">
-                <h3>Thought of the Day</h3>
-            </div>
-            <div id="music">
-                <h3>Tunes for Working</h3>
+                <!--<h3>Thought of the Day</h3>-->
+                <div id="twitwrap">
+                    <a class="twitter-timeline" data-width="400px" data-height="300px" href="https://twitter.com/CodeWisdom?ref_src=twsrc%5Etfw"  data-chrome="nofooter noborders transparent" data-tweet-limit="1"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
             </div>
         </div>
         <div class="currproj boxyp">
@@ -112,14 +120,18 @@
                     <input type="checkbox" id="check5">
                     <input type="text"  id="txt5"><i class="material-icons checky">check</i>
                 </li>
+                <!--removed this for space:
                 <li>
                     <input type="checkbox" id="check6">
                     <input type="text"  id="txt6"><i class="material-icons checky">check</i>
-                </li>
+                </li>-->
               </ul>
         </div>
-        <div class="calendar boxy">
-            <h2>Deadlines</h2>
+        <div class="newmusic boxy">
+            <h3>Tunes for Working</h3>
+                <div id="musicbox">
+                    <iframe src="https://open.spotify.com/embed/playlist/2GI6wbTjS4M4QHN8PbsIr0" width="160" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
         </div>
         <div class="deadlines boxy">
             <h2>Coming Deadlines:</h2>
