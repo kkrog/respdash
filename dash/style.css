@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 a {
     text-decoration: none;
     color: inherit;
@@ -20,7 +19,6 @@ ul {
 }
 /*end reset*/
 body {
-    /*redoing as flex to see if fixes width issues-it does!*/
     font-family: Helvetica, Arial, sans-serif;
     background: #fff;
     text-align: left;
@@ -325,5 +323,52 @@ header figure {
     }
     header h2 {
         line-height: 1.2;
+    }
+}
+@media only screen and (min-width:701px) and (max-width:1231px) {
+    main {
+        grid-template: repeat(4,2fr) / repeat(2,2fr);
+        grid-gap: 1rem;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas:
+        "hello hello"
+        "welcome welcome"
+        "project1 project2"
+        "calendar calendar"
+        "tasks dlines";
+        margin-left: 1rem;
+    }
+}
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 10px;
+    }
+    main {
+        grid-template: repeat(7,1fr) / repeat(1,1fr);
+        grid-gap: .25rem;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas:
+        "hello"
+        "welcome"
+        "project1"
+        "project2"
+        "tasks"
+        "calendar"
+        "dlines";
+        margin-left: .25rem;
+    }
+    aside {
+        width: 10vw;
+    }
+    aside span {
+        display:none;
+    }
+    #fcmain {
+        display: none;
+    }
+    #fcalt {
+        display:block;
     }
 }
