@@ -3,9 +3,7 @@
     margin: 0px;
     padding: 0px;
 }
-li {
-    list-style-type: none;
-}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -27,11 +25,20 @@ body {
     background: #fff;
     text-align: left;
     font-size: 16px;
-    color: darkslategrey;
+    color: rgb(72, 92, 92);
     display:flex;
     width: 100vw;
     height: 100vh;
 }
+.boxy {
+    padding: 1rem;
+    background-color: rgb(153, 204, 204);
+}
+.boxyp {
+    padding: 1rem;
+    background-color: rgb(204, 232, 232);
+}
+/*start sidebar*/
 aside {
     background-color: teal;
     color: rgba(255,255,255,.6);
@@ -99,9 +106,12 @@ main {
     height: 100vh;
     margin: 0 1rem;
 }
+h2, h3 {
+    line-height: 2;
+    text-align: center;
+}
 /*start header*/
 header {
-    background-color: thistle;
     grid-area: hello;
     padding-top: .5vh;
     display: flex;
@@ -135,7 +145,7 @@ header i:hover {
     align-self: center;
 }
 .sbtn {
-    color: darkslategrey;
+    color: rgb(72, 92, 92);
     float: right;
     width: 2rem;
     height: 2rem;
@@ -147,7 +157,7 @@ header i:hover {
     border: none;
     background: none;
     outline: none;
-    color: white;
+    color: rgb(72,92,92);
     transition: 0.3s;
     width: 0px;
 }
@@ -156,7 +166,7 @@ header i:hover {
     padding: 0 6px;
 }
 .search:hover {
-    background: rgba(255,255,255,.4);
+    background: rgba(0,128,128,.05);
 }
 header figure {
     display: flex;
@@ -175,7 +185,7 @@ header figure {
 }
 /*end header start welcome*/
 .welctip {
-    background-color: darkturquoise;
+    background-color: rgb(153,204,204);
     display: flex;
     justify-content: space-between;
     grid-area: welcome;
@@ -192,15 +202,13 @@ header figure {
     width: 33.3%;
 }
 .currproj {
-    background-color: violet;
     grid-area: project1;
 }
 .currproj h2,h4 {
     padding-bottom: 1rem;
 }
-.currproj i {
-    font-size: 1rem;
-}
+/*.currproj i {
+}*/
 .currproj p {
     padding-left: 1rem;
 }
@@ -211,16 +219,22 @@ header figure {
     justify-content: space-around;
 }
 #archproj {
-    background-color: lightpink;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#archproj ul {
+    list-style-type: circle;
 }
 #futproj {
-    background-color: hotpink;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*to do list styling*/
 .cptasks {
-    background-color: lightskyblue;
     grid-area: tasks;
 }
 .cptasks h2 {
@@ -277,7 +291,6 @@ header figure {
   }
 /*end to do list*/
 .calendar {
-    background-color: lightsteelblue;
     grid-area: calendar;
 }
 /*#calwrap {
@@ -294,8 +307,17 @@ header figure {
     height: 100%;
 }*/
 .deadlines {
-    background-color: mediumaquamarine;
     grid-area: dlines;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.deadlines thead{
+    display: none;
+}
+.deadlines td {
+    padding: 1rem;
+    margin: 1rem;
 }
 @media only screen and (max-width:650px) {
     #headbreak {

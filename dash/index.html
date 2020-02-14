@@ -6,11 +6,12 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e300bfb17d.js" crossorigin="anonymous"></script>
     <title>A Responsive Dashboard</title>
 </head>
 <!--THIS VERSION HAS NO IFRAMES OR PLUGIN CONTENT-->
 <body>
-    <aside>
+    <aside role="navigation">
         <h1><i class="material-icons">face</i><span id="name">Ren</span></h1>
         <ul class="sidenavmain">
            <li><a href="#overview"><i class="material-icons">pie_chart</i><span>Overview</span></a></li>
@@ -65,14 +66,14 @@
                 <h3>Tunes for Working</h3>
             </div>
         </div>
-        <div class="currproj">
+        <div class="currproj boxyp">
             <h2>Current Project</h2>
-            <h4><i class="material-icons">radio_button_unchecked</i>Portfolio</h4>
+            <h4><i class="fas fa-cube"></i>Portfolio</h4>
             <p>A project covering intro to bootstrap and demonstrating mastery of basic web development concepts.</p>
         </div>
-        <div class="otherproj">
+        <div class="otherproj boxyp">
             <div id="archproj">
-                <h3>Archive</h3>
+                <h3><i class="fas fa-cubes"></i> Archive</h3>
                 <ul class="old">
                     <li><a href="https://github.com/kkrog/teatime">Teatime</a></li>
                     <li><a href="https://github.com/kkrog/amalie_bakery">Bakery</a></li>
@@ -80,15 +81,15 @@
                 </ul>
             </div>
             <div id="futproj">
-                <h3>Future</h3>
-                <ul class="next">
-                    <li>New Project 1</li>
-                    <li>New Project 2</li>
-                    <li>New Project 3</li>
-                </ul>
+                <h3><i class="fas fa-cubes"></i> Future</h3>
+                <ol class="next">
+                    <li>Ad Hoc Website</li>
+                    <li>Javascript Project</li>
+                    <li>JS React Project</li>
+                </ol>
             </div>
         </div>
-        <div class="cptasks">
+        <div class="cptasks boxy">
             <h2>Today's To Do</h2>
             <ul class="todo">
                 <li>
@@ -117,16 +118,31 @@
                 </li>
               </ul>
         </div>
-        <div class="calendar">
+        <div class="calendar boxy">
             <h2>Deadlines</h2>
         </div>
-        <div class="deadlines">
-            <h2>Deadlines: <span>Details</span></h2>
-            <ul>
-                <li>Some Deadline</li>
-                <li>Another Deadline!</li>
-                <li>Final Deadline</li>
-            </ul>
+        <div class="deadlines boxy">
+            <h2>Coming Deadlines:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Project</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Feb 18</td>
+                    <td>Ad Hoc Website</td>
+                </tr>
+                <tr>
+                    <td>Mar 18</td>
+                    <td>Javascript</td>
+                </tr>
+                <tr>
+                    <td>Apr 09</td>
+                    <td>Portfolio Review</td>
+                </tr>
+            </table>
         </div>
     </main>
 </body>
